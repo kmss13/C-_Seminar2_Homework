@@ -7,9 +7,9 @@ int ReadNumber(string message)
     return value;
 }
 
-bool ValidateThree (int number)
+bool ValidateThree(int number)
 {
-    if (number >=100)
+    if (number >= 100)
     {
         return true;
     }
@@ -19,15 +19,15 @@ bool ValidateThree (int number)
 
 int num = ReadNumber("Введите число ");
 
-if(ValidateThree(num))
+if (ValidateThree(num))
 {
-    while (num > 999) 
+    while (num > 999)
     {
-        num = num/ 10;
+        num = num / 10;
     }
     int thirdNum = num % 10;
-    
-Console.WriteLine($"Третья цифра числа  равна {thirdNum}");
+
+    Console.WriteLine($"Третья цифра числа  равна {thirdNum}");
 
 }
 
